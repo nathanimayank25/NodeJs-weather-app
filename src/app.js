@@ -1,4 +1,4 @@
-const hbs = require('hbs')
+const hbs = require('hbs') 
 const express = require('express')
 const path = require('path')
 const geocode = require('./utls/geocode')
@@ -72,11 +72,6 @@ app.get('/weather', (req, res)=>{
         })
     })
 
-    // res.send({
-    //     forecast: 'its sunny',
-    //     location: 'toronto',
-    //     address: req.query.address
-    // })
 })
 
 app.get('/products', (req, res)=>{
