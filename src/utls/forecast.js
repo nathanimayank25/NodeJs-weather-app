@@ -7,7 +7,7 @@ const url = 'http://api.weatherstack.com/current?access_key=6e9bb35b16645d8d8e06
 // response.body.currently.precipProbability + '% chance of rain.')
 // })
 
-
+//console.log(url)
 
 request({ url: url, json: true }, (error, response) => {
     if (error) {
@@ -19,7 +19,7 @@ request({ url: url, json: true }, (error, response) => {
 //     } 
     else {
     callback(undefined, {
-        temperature: response.body.current.temperature     
+        temperature:  'The current temperature is ' + response.body.current.temperature + ' but it feels like ' + response.body.current.feelslike
         //temperature: '20'  
     })
     }
