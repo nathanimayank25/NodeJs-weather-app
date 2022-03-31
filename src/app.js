@@ -89,7 +89,7 @@ app.get('/products', (req, res)=>{
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        title: 'Rayansh is a good boy. But mumma is a gundupoo!! and daddy is the best pikachu',
+        title: 'Learning Node is fun!',
         name: 'Mayank Nathani'
     })
 })
